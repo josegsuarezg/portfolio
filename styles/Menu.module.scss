@@ -1,0 +1,70 @@
+@import 'variables/variables';
+@import 'variables/mixins';
+
+
+.navegation {
+  z-index: 1;
+  background-color: $primary_color;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border-top: 3px solid rgba(27, 24, 37, 0.623);
+  gap: 2rem;
+  
+  @media (min-width: $breakpoint_tablet) {
+    padding: 1rem;
+    border: none;
+    width: 4rem;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    // align-items: center;
+    top: 3rem;
+    left: 3rem;
+    border-radius: 25px;
+  }
+  
+  .link {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: #ffff 3px solid;
+    border-radius: 50%;
+    padding: .5rem;
+    background-color: $secondary_color;
+    transition: all 0.5s ease;
+      &:hover {
+        box-shadow: 0 0 0.5rem 0.5rem $secondary_color;
+      }
+    
+      @media (min-width: $breakpoint_tablet) {
+        transform: translate(95%, 0);
+      }
+      
+      
+    }
+    
+  .home {
+    @include pageButton('Home', 61px, 10px, 5px, 50px);
+  }
+  .havilidades {
+    @include pageButton('Habilidades', 61px, 70px, 100px, 50px);
+  }
+  .proyectos {
+    @include pageButton('Proyectos', 61px, 130px, 180px, 50px);
+  }
+  .estudios {
+    @include pageButton('Estudios', 61px, 201px, 260px, 50px);
+  }
+  .contacto {
+    @include pageButton('Contacto', 61px, 260px, 340px, 50px);
+  }
+  .darkmode {
+    cursor: pointer;
+    @include pageButton('Darkmode', 61px, 280px, 425px, 50px);
+  }
+}

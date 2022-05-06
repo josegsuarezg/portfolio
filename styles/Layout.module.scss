@@ -1,0 +1,36 @@
+@import 'variables/variables';
+
+.container {
+  max-width: 100vw;
+
+  
+  @media (min-width: $breakpoint_tablet) {
+    margin: 3rem 3rem 0 2rem;
+    position: relative;
+  }
+}
+
+.children {
+  margin: 0;
+}
+
+@media (min-width: $breakpoint_tablet){
+  .children {
+    margin-left: 10rem;
+  }
+}
+
+.dark {
+  background-color: #252a31;
+  color: $text_wite;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  span,
+  p {
+    color: $text_wite;
+  }
+}

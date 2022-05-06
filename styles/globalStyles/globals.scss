@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
+@import "../variables/variables";
+
+body {
+  
+  font-family: 'Quicksand', sans-serif;
+  color: $text_dark;
+}
+
+.dark {
+  background-color: #252a31;
+  color: $text_wite;
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  span,
+  p{
+    color: $text_wite;
+  }
+}
+

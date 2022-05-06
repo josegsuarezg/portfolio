@@ -1,0 +1,278 @@
+@import 'variables/variables';
+
+.header {
+  background-image: linear-gradient(to right, rgb(0 0 0 / .8), rgb(0 0 0 / .7)),
+  url('../public/img/hero1.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  @media (min-width: $breakpoint_tablet) {
+    height: 5rem;
+    padding: 5rem 0;
+    margin-top: 2rem;
+    margin-right: 1rem;
+
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: $text_wite;
+    text-align: left;
+    margin: 0;
+    padding-left: 2rem;
+    
+    @media (min-width: $breakpoint_tablet) {
+      font-size: 3rem;
+      font-weight: 700;
+      padding-left: 0;
+      padding-left: 2rem;
+    }
+  }
+  
+  p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: $text_wite;
+    text-align: left;
+    margin: 0;
+    padding-left: 2rem;
+    
+    @media (min-width: $breakpoint_tablet) {
+      font-size: 1rem;
+      padding-left: 0;
+      padding-left: 2rem;
+    }
+  }
+}
+
+.contenidoPrincipal {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  
+  @media (min-width: $breakpoint_tablet) {
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+  
+  .about {
+      margin: 0 auto;
+      width: 95%;
+      padding: 1rem;
+      line-height: 1.2; 
+    
+    @media (min-width: $breakpoint_tablet) {
+      width: 99%;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+  .botones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    @media (min-width: $breakpoint_tablet) {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+  
+  .button {
+    background-color: $primary_color;
+    color: $text_wite;
+    border: none;
+    padding: .8rem .8rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    
+    &:hover {
+      background-color: darken($primary_color, 5);
+    }
+    
+    @media (min-width: 420px) {
+      display: inline-block;
+      width: 14rem;
+    }
+  }
+  
+  }
+  
+
+    .perfil {
+      margin-bottom: 4rem;
+      background-color: #eff1f1;
+      
+      @media (min-width: 420px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20rem;
+      }
+      
+      @media (min-width: $breakpoint_tablet) {
+      width: 25%;
+      height: 65vh;
+      padding: .5rem;
+      position: absolute;
+      right: 2rem;
+      top: -7rem;
+      border-radius: 25px;
+      }
+      
+      .imagen {
+        background-image: url('../public/img/foto1.jpg');
+        background-size: cover;
+        background-position: 50% 10%;
+        background-repeat: no-repeat;
+        width: 100%;
+        display: block;
+        height: 25rem;
+        margin: 2rem auto;
+        
+        @media (min-width: 425px) {
+          height: 18rem;
+        }
+        
+        @media (min-width: $breakpoint_tablet) {
+          width: 12rem;
+          height: 12rem;
+          margin: 0 auto;
+          border-radius: 50%;
+          position: absolute;
+          top: -6rem;
+        }
+      }
+      .card {
+        max-width: 90%;
+        margin: 3rem 2rem;
+        height: 15rem;
+        line-height: 2;
+        
+        @media (min-width: $breakpoint_tablet) {
+          margin: 0;
+          position: absolute;
+          top: 8rem;
+          left: 3rem;
+          width: 70%;
+          padding: 0;
+        }
+        
+        h3{
+          margin: 0;
+          padding: 0;
+          font-size: 1rem;
+          color: $text_dark;
+        }
+        
+        p {
+          width: 100%;
+          padding: 0;
+          margin: 0 0 .5rem 0;
+          font-size: .9rem;
+          color: $text_dark;
+        }
+      }
+    }
+    .perfil__dark {
+      margin-bottom: 4rem;
+      background-color: $primary_color;
+      
+      @media (min-width: 420px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20rem;
+      }
+      
+      @media (min-width: $breakpoint_tablet) {
+      width: 25%;
+      height: 65vh;
+      padding: .5rem;
+      position: absolute;
+      right: 2rem;
+      top: -7rem;
+      border-radius: 25px;
+      }
+      
+      .imagen {
+        background-image: url('../public/img/foto1.jpg');
+        background-size: cover;
+        background-position: 50% 10%;
+        background-repeat: no-repeat;
+        width: 100%;
+        display: block;
+        height: 25rem;
+        margin: 2rem auto;
+        
+        @media (min-width: 425px) {
+          height: 18rem;
+        }
+        
+        @media (min-width: $breakpoint_tablet) {
+          width: 12rem;
+          height: 12rem;
+          margin: 0 auto;
+          border-radius: 50%;
+          position: absolute;
+          top: -6rem;
+        }
+      }
+      .card {
+        max-width: 90%;
+        margin: 3rem 2rem;
+        height: 15rem;
+        line-height: 2;
+        
+        @media (min-width: $breakpoint_tablet) {
+          margin: 0;
+          position: absolute;
+          top: 8rem;
+          left: 3rem;
+          width: 70%;
+          padding: 0;
+        }
+        
+        h3{
+          margin: 0;
+          padding: 0;
+          font-size: 1rem;
+          color: $text_wite;
+        }
+        
+        p {
+          width: 100%;
+          padding: 0;
+          margin: 0 0 .5rem 0;
+          font-size: .9rem;
+          color: $text_wite;
+        }
+      }
+    }
+
+.dark {
+  background-color: $primary_color;
+}
+
+.ligth {
+  background-color: #fff;
+}

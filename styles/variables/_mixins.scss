@@ -1,0 +1,36 @@
+@import './variables';
+
+@mixin pageButton ($name, $buttom, $left1, $top, $left2) {
+  &:hover {
+    &::before {
+      content: $name;
+      position: absolute;
+      bottom: $buttom;
+      left: $left1;
+      font-weight: 400;
+      color: $secondary_color;
+      padding: 7px;
+      background-color: $primary_color;
+      border-radius: 10px;
+      z-index: 1;
+      box-shadow: 0 0 0.5rem 0.5rem $secondary_color;
+    }
+  }
+  @media (min-width: $breakpoint_tablet) {
+    &:hover {
+      transition: all 0.3s ease;
+      &::before {
+        content: $name;
+        position: absolute;
+        top: $top;
+        left: $left2;
+        font-weight: 400;
+        color: $secondary_color;
+        padding: 7px;
+        background-color: $primary_color;
+        border-radius: 10px;
+        height: 20px;
+      }
+    }
+  }
+}
