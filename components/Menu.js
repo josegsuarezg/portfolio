@@ -1,4 +1,4 @@
-
+import UseDark from '../hooks/useDataForm';
 import Link from "next/link";
 import styles from "../styles/Menu.module.scss";
 
@@ -15,6 +15,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Menu = ({pagina}) => {
+  
+  const { isDark, handleDarkMode } = UseDark();
   
   return (
     <nav className={styles.navegation}>
@@ -59,10 +61,18 @@ const Menu = ({pagina}) => {
         </a>
       </Link>
       <a className={styles.darkmode}>
-        <FontAwesomeIcon
-        icon={faMoon}
-        style={{fontSize: 25, color: "white" }} 
-        />
+        {isDark ?
+          <FontAwesomeIcon
+            icon={faSun}
+            style={{fontSize: 25, color: "yellow" }} 
+            onClick={handleDarkMode}
+          /> :
+          <FontAwesomeIcon
+            icon={faMoon}
+            style={{fontSize: 25, color: "white" }} 
+            onClick={handleDarkMode}
+          />
+        }
       </a>
   </nav>
   )

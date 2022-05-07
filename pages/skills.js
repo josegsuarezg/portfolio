@@ -1,8 +1,11 @@
+import UseDark from '../hooks/useDataForm';
 import Image from 'next/image';
 import Layout from '../components/Layout';
 import Styles from '../styles/Skills.module.scss';
 
 export default function skills() {
+  
+  const { isDark } = UseDark();
   
   return (
     <Layout
@@ -13,67 +16,67 @@ export default function skills() {
           <section className={Styles.skills__program}>
             <h2>Habilidades</h2>
             <div className={Styles.skills__program_images}>
-              <div className={Styles.programa}>
+              <div className={isDark ? Styles.programa__dark : Styles.programa}>
                 <Image Layout="resposive" width={60} height={60} src="/img/skills/html5.svg" alt="HTML" />
                 <p>HTML5</p>
               </div>
-              <div className={Styles.programa}>
+              <div className={isDark ? Styles.programa__dark : Styles.programa}>
                 <Image width={60} height={60} src="/img/skills/css3.svg" alt="CSS" />
                 <p>CSS3</p>
               </div>
-              <div className={Styles.programa}>
+              <div className={isDark ? Styles.programa__dark : Styles.programa}>
                 <Image width={60} height={60} src="/img/skills/bootstrap-5.svg" alt="BOOTSTRAP" />
                 <p>BOOTSTRAP</p>
               </div>
-              <div className={Styles.programa}>
+              <div className={isDark ? Styles.programa__dark : Styles.programa}>
                 <Image width={60} height={60} src="/img/skills/tailwind.svg" alt="TAILWIND" />
                 <p>TAILWIND</p>
               </div>
-              <div className={Styles.programa}>
+              <div className={isDark ? Styles.programa__dark : Styles.programa}>
                 <Image width={60} height={60} src="/img/skills/sass.svg" alt="SASS" />
                 <p>SASS</p>
               </div>
-              <div className={Styles.programa}>
+              <div className={isDark ? Styles.programa__dark : Styles.programa}>
                 <Image width={60} height={60} src="/img/skills/javascript.svg" alt="JavaScript" />
                 <p>JavaScript</p>
               </div>
-              <div className={Styles.programa}>
+              <div className={isDark ? Styles.programa__dark : Styles.programa}>
                 <Image width={60} height={60} src="/img/skills/react.svg" alt="REACT" />
                 <p>REACT</p>
               </div>
-              <div className={Styles.programa}>
+              <div className={isDark ? Styles.programa__dark : Styles.programa}>
                 <Image width={60} height={60} src="/img/skills/redux.svg" alt="REDUX" />
                 <p>REDUX</p>
               </div>
-              <div className={Styles.programa}>
+              <div className={isDark ? Styles.programa__dark : Styles.programa}>
                 <Image width={60} height={60} src="/img/skills/nextjs.svg" alt="NEXT" />
                 <p>NEXT</p>
               </div>
-              <div className={Styles.programa}>
+              <div className={isDark ? Styles.programa__dark : Styles.programa}>
                 <Image width={60} height={60} src="/img/skills/jest.svg" alt="JEST" />
                 <p>JEST</p>
               </div>
-              <div className={Styles.programa}>
+              <div className={isDark ? Styles.programa__dark : Styles.programa}>
                 <Image width={60} height={60} src="/img/skills/git.svg" alt="GIT" />
                 <p>GIT</p>
               </div>
-              <div className={Styles.programa}>
+              <div className={isDark ? Styles.programa__dark : Styles.programa}>
                 <Image width={60} height={60} src="/img/skills/nodejs.svg" alt="NODE" />
                 <p>NODE</p>
               </div>
-              <div className={Styles.programa}>
+              <div className={isDark ? Styles.programa__dark : Styles.programa}>
                 <Image width={60} height={60} src="/img/skills/express.svg" alt="EXPRESS" />
                 <p>EXPRESS</p>
               </div>
-              <div className={Styles.programa}>
+              <div className={isDark ? Styles.programa__dark : Styles.programa}>
                 <Image width={60} height={60} src="/img/skills/mongodb.svg" alt="MONGODB" />
                 <p>MONGODB</p>
               </div>
-              <div className={Styles.programa}>
+              <div className={isDark ? Styles.programa__dark : Styles.programa}>
                 <Image width={60} height={60} src="/img/skills/firebase.svg" alt="FIREBASE" />
                 <p>FIREBASE</p>
               </div>
-              <div className={Styles.programa}>
+              <div className={isDark ? Styles.programa__dark : Styles.programa}>
                 <Image width={60} height={60} src="/img/skills/mysql.svg" alt="MYSQL" />
                 <p>MYSQL</p>
               </div>

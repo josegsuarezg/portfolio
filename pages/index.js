@@ -1,7 +1,10 @@
+import UseDark from '../hooks/useDataForm';
 import Layout from '../components/Layout'
 import styles from '../styles/Home.module.scss'
 
 export default function Home() {
+  
+    const { isDark } = UseDark();
   
   return (
     <Layout
@@ -21,7 +24,7 @@ export default function Home() {
             <a href='/José Suárez CV Dev.pdf' download="José Suárez CV.pdf" className={styles.button} >Descargar Resumen</a>
           </div>
         </section>
-        <aside className={styles.perfil}>
+        <aside className={isDark ? styles.perfil__dark : styles.perfil}>
           <div className={styles.imagen}>
           </div>
           <div className={styles.card}>
