@@ -81,6 +81,11 @@
     align-items: center;
     
     
+    @media (min-width: $breakpoint_mobile) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     @media (min-width: $breakpoint_tablet) {
       flex-direction: row;
       justify-content: center;
@@ -113,6 +118,10 @@
       display: inline-block;
       width: 14rem;
     }
+    
+    @media (min-width: 765px) {
+      width: 7rem;
+    }
   }
   
   }
@@ -123,10 +132,10 @@
       background-color: #eff1f1;
       
       @media (min-width: 420px) {
+        margin-top: 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 20rem;
       }
       
       @media (min-width: $breakpoint_tablet) {
@@ -177,19 +186,33 @@
           padding: 0;
         }
         
+        @media (min-width: 765px) {
+          width: 70%;
+          left: 2rem;
+        }
+        
         h3{
           margin: 0;
           padding: 0;
           font-size: 1rem;
           color: $text_dark;
+          
+          @media (min-width: 865px) {
+            font-size: .8rem;
+            width: 30%;
+          }
         }
         
         p {
-          width: 100%;
           padding: 0;
+          width: 80%;
           margin: 0 0 .5rem 0;
-          font-size: .9rem;
+          font-size: .8rem;
           color: $text_dark;
+          @media (min-width: 865px) {
+            font-size: .9rem;
+            width: 100%;
+          }
         }
       }
     }
