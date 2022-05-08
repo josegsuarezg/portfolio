@@ -8,9 +8,9 @@ const contact = () => {
   const { data, setData, error, setError, handleChange } = UseDataForm();
   
   const handleSubmit = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     
-    if(data.name === '' || data.email === '' || data.mensaje === '') {
+    if(data.name && data.email && data.message) {
       setError('Todos los campos son obligatorios');
       setTimeout(() => {
         setError('');
@@ -28,7 +28,12 @@ const contact = () => {
         <header className={Styles.cabecera}>
           <a href='https://github.com/josegsuarezg?tab=repositories'>GitHub</a>
         </header>
-        <form onSubmit={handleSubmit} className={Styles.formulario}>
+        <form 
+          onSubmit={handleSubmit} 
+          className={Styles.formulario}
+          action="https://formsubmit.co/d33cd42350d512288a3386cc2af789c8" 
+          method="POST"
+        >
           <div className={Styles.alert}>
             {error && <Error/>}
           </div>
@@ -55,6 +60,11 @@ const contact = () => {
             onChange={e => handleChange(e)} 
           ></textarea>
           <input type="submit" value="Enviar Email" className='' />
+          
+          <input type="hidden" name="_next" value="./index.js" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          
         </form>
       </div>
     </Layout>
