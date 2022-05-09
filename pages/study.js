@@ -8,49 +8,64 @@ const data = [
     id: 1,
     nombre: "CSS La Guía Completa - Flexbox, CSS Grid, SASS +20 proyectos",
     resumen: "Aprende Flexbox, CSS Grid, Custom Properties, SASS, Mixins, Gulp Workflows, Animaciones, RWD",
-    imagen: "/img/cursos/html-css.png"
+    imagen: "/img/cursos/html-css.png",
+    url: 'https://www.udemy.com/course/css-grid-y-flexbox-la-guia-definitiva-crea-10-proyectos/'
   },
   
   {
     id: 2,
     nombre: "Bootstrap 5 y SASS - La Guía Práctica - Crea 10 Sitios Web",
     resumen: "Aprende La nueva versión de Bootstrap con SASS - Además incluye: Gulp, Parcel, NPM, Performance y Buenas Practicas!",
-    imagen: "/img/cursos/bootstrap.png"
+    imagen: "/img/cursos/bootstrap.png",
+    url: 'https://www.udemy.com/course/aprende-bootstrap-4-el-framework-responsive-html5-css3-y-js/'
   },
   
   {
     id: 3,
     nombre: "JavaScript Moderno Guía Definitiva Construye +15 Proyectos",
     resumen: "Aprende el Lenguaje de Programación Web más popular paso a paso con +15 Proyectos - Incluye Proyecto MERN Full Stack",
-    imagen: "/img/cursos/js.png"
+    imagen: "/img/cursos/js.png",
+    url: 'https://www.udemy.com/course/javascript-moderno-guia-definitiva-construye-10-proyectos/'
   },
   
   {
     id: 4,
     nombre: "React - La Guía Completa: Hooks Context Redux MERN +15 Apps",
     resumen: "Incluye React Hooks Gatsby GraphQL Firestore Redux Context MERN Next.js Styled Components Testing Cypress",
-    imagen: "/img/cursos/react-redux.png"
+    imagen: "/img/cursos/react-redux.png",
+    url: 'https://www.udemy.com/course/react-de-principiante-a-experto-creando-mas-de-10-aplicaciones/'
   },
   
   {
     id: 5,
     nombre: "React Avanzado: Fullstack Next.js, Apollo, MongoDB y GraphQL",
     resumen: "Construye una Aplicación en Tiempo Real Completa con React Next.js GraphQL Apollo MongoDB Tailwind Formik",
-    imagen: "/img/cursos/react-avanzado.png"
+    imagen: "/img/cursos/react-avanzado.png",
+    url: 'https://www.udemy.com/course/fullstack-react-graphql-y-apollo-de-principiante-a-experto/'
   },
   
   {
     id: 6,
-    nombre: "Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL",
-    resumen: "Aprende Desarrollo Web con este curso 100% práctico, paso a paso y sin conocimientos previo INCLUYE 4 PROYECTOS FINALES",
-    imagen: "/img/cursos/desarrolloweb.png"
+    nombre: "React Native - Crea aplicaciones para Android y iOS c/ ReactL",
+    resumen: "Aprende a crear aplicaciones iOS y Android con React, incluye: React Navigation, GraphQL, MongoDB, Firebase y más!",
+    imagen: "/img/cursos/reactnative.png",
+    url: 'https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/'
   },
   
   {
     id: 7,
+    nombre: "Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL",
+    resumen: "Aprende Desarrollo Web con este curso 100% práctico, paso a paso y sin conocimientos previo INCLUYE 4 PROYECTOS FINALES",
+    imagen: "/img/cursos/desarrolloweb.png",
+    url: 'https://www.udemy.com/course/desarrollo-web-completo-con-html5-css3-js-php-y-mysql/'
+  },
+  
+  {
+    id: 8,
     nombre: "Laravel 9 Crea Aplicaciones y Sitios Web con PHP 8 y MVC",
     resumen: "Aprende Laravel y Comienza a Crear Aplicaciones Web Dinámicas, Interactivas y Seguras con este curso INCLUYE 3 PROYECTOS",
-    imagen: "/img/cursos/laravel.png"
+    imagen: "/img/cursos/laravel.png",
+    url: 'https://www.udemy.com/course/curso-laravel-crea-aplicaciones-y-sitios-web-con-php-y-mvc/'
   }
 
 ]
