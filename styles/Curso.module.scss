@@ -29,6 +29,7 @@
   margin: 0 auto;
   padding: 1rem;
   height: 85%;
+  transition: all 0.5s ease;
   
   h3 {
     font-size: 1rem;
@@ -42,3 +43,14 @@
   }
 }
 
+.enlaceCurso {
+  text-decoration: none;
+  color: $primary_color;
+  display: block;
+  border: none;
+  
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 3rem $primary_color;
+  }
+}
