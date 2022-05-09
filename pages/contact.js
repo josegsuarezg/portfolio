@@ -10,7 +10,7 @@ const contact = () => {
   const handleSubmit = (e) => {
     // e.preventDefault();
     
-    if(data.name && data.email && data.message) {
+    if(data.name === "" && data.email === "" && data.message === "") {
       setError('Todos los campos son obligatorios');
       setTimeout(() => {
         setError('');
@@ -61,9 +61,9 @@ const contact = () => {
           ></textarea>
           <input type="submit" value="Enviar Email" className='' />
           
-          <input type="hidden" name="_next" value="./index.js" />
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="/" />
           
         </form>
       </div>
