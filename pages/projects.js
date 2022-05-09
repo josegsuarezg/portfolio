@@ -29,6 +29,15 @@ const data = [
     imagen: '/img/proyectos/GuitarLA.png',
     enlace: 'https://guitarla-next-xi.vercel.app/',
     repositorio: 'https://github.com/josegsuarezg/guitarla_next'
+  },
+  
+  {
+    id: 4,
+    nombre: 'Portfolio SuarezDev', 
+    resumen: 'Creación de Portfolio de presentación y proyectos creados, así como también un área de contacto, para el cual se usaron herramientas como React, NextJS, Custom Hooks, API Context, Sass, Deploy en Vercel con CI/CD en GitHub .',
+    imagen: '/img/proyectos/portfolio.png',
+    enlace: 'https://suarezdev.vercel.app/',
+    repositorio: 'https://github.com/josegsuarezg/portfolio'
   }
   
 ]
