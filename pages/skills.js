@@ -88,7 +88,7 @@ export default function skills() {
               <ul className={Styles.skill__list_items}>
                 <li>
                   <h3>HTML5</h3>
-                  <p>Senmantic HTML - Performance - Lazy loading - SEO - Layout - Forms</p>
+                  <p>Semantic HTML - Performance - Lazy loading - SEO - Layout - Forms</p>
                 </li>
                 <li>
                   <h3>CSS3</h3>

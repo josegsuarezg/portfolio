@@ -31,7 +31,7 @@ export default function Home() {
             <h3>Nombre</h3>
             <p>José Gregorio Suárez García</p>
             <h3>Nacimiento</h3>
-            <p>23 Septiembre 1982</p>
+            <p>23 Septiembre 1983</p>
             <h3>Ubicación</h3>
             <p>Ciudad Autónoma de Buenos Aires, Argentina</p>
           </div>
