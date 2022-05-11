@@ -25,11 +25,11 @@ export default function skills() {
                 <p>CSS3</p>
               </div>
               <div className={isDark ? Styles.programa__dark : Styles.programa}>
-                <Image width={60} height={60} src="/img/skills/bootstrap-5.svg" alt="BOOTSTRAP" />
-                <p>BOOTSTRAP</p>
+                <Image width={60} height={60} src="/img/skills/bootstrap-5.svg" alt="Boostrap" />
+                <p>Bootstrap</p>
               </div>
               <div className={isDark ? Styles.programa__dark : Styles.programa}>
-                <Image width={60} height={60} src="/img/skills/tailwind.svg" alt="TAILWIND" />
+                <Image width={60} height={60} src="/img/skills/tailwind.svg" alt="Tailwind" />
                 <p>TAILWIND</p>
               </div>
               <div className={isDark ? Styles.programa__dark : Styles.programa}>

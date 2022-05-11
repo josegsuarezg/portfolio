@@ -24,7 +24,7 @@ const data = [
   
   {
     id: 3,
-    nombre: 'Sitio WEB Venta de Guitarras y Cursos de Guitarra', 
+    nombre: 'Sitio WEB Venta de Guitarras y Cursos', 
     resumen: 'Creación de un Sitio Web para la Venta de Cursos e Instrumentos Musicales, específicamente las Guitarras, Utilizado React, NextJS, TailwindCSS, CSSModules, Styled-Components, Axios, FetchAPI, Async/Await, todo esto para el frontend, y Atrapy como CMS para el backend y MongoDB para la base de datos con ello se genera una API Rest para consumir en el Frontend.',
     imagen: '/img/proyectos/GuitarLA.png',
     enlace: 'https://guitarla-next-xi.vercel.app/',

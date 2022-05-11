@@ -14,9 +14,9 @@ const Curso = ({curso}) => {
             alt={nombre} 
             priority 
           />
+        </a>
           <h3>{nombre}</h3>
           <p>{resumen}</p>
-        </a>
       </div>
   )
 }
